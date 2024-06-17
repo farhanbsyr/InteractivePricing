@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end Font family -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-pricing">
+        <div class="wrapper">
+          <div class="title-pricing">
+            <div class="title">Simple, traffic-based pricing</div>
+            <div class="sub-title">
+              Sign-up for our 30-day trial, No credit card required
+            </div>
+          </div>
+          <div class="card-pricing">
+            <div class="upper-pricing">
+              <div class="amount">
+                <div class="page" id="slider-page">
+                  <span id="value-page">100</span>K PAGEVIEWS
+                </div>
+                <div class="price" id="slider-price">
+                  $<span id="value-price">16.00</span>
+                  <span id="contract">/ mounth</span>
+                </div>
+              </div>
+              <div class="slider-amount">
+                <input
+                  type="range"
+                  min="0"
+                  max="200"
+                  value="100"
+                  class="slider"
+                  id="mySlider"
+                />
+                <div id="selector">
+                  <div class="selectBTN"></div>
+                </div>
+              </div>
+              <div class="toogle-date">
+                <div class="toogle-group">
+                  <label for="">Mount Billing</label>
+                  <div class="switch">
+                    <input type="checkbox" id="switchToggle" />
+                    <label for="switchToggle"></label>
+                  </div>
+
+                  <label for="">Year</label>
+                  <div class="discount"><p>discount 25%</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="below-pricing">
+              <div class="adventage">
+                <ul class="list-benefit">
+                  <li>
+                    <div>
+                      <img src="./images/icon-check.svg" width="12" alt="" />
+                    </div>
+                    <div>Unlimited Websites</div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="./images/icon-check.svg" width="12" alt="" />
+                    </div>
+                    <div>100% data ownership</div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="./images/icon-check.svg" width="12" alt="" />
+                    </div>
+                    <div>Email Reports</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-trial">Start my trial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
